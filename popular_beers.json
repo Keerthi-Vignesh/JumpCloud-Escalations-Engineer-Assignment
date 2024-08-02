@@ -1,0 +1,40 @@
+{
+  customerCount: 115,
+  name: 'Super Haze',
+  type: 'Hazy IPA'
+}
+{
+  customerCount: 34,
+  name: 'Peruvian Pils',
+  type: 'Pilsner'
+}
+{
+  customerCount: 34,
+  name: 'Down N Out Stout',
+  type: 'Stout'
+}
+{
+  customerCount: 33,
+  name: 'Musical Mosaic',
+  type: 'IPA'
+}
+{
+  customerCount: 30,
+  name: 'Kasual Kolsch',
+  type: 'Kolsch'
+}
+{
+  customerCount: 20,
+  name: 'Slam Dunk',
+  type: 'Dunkelweizen'
+}
+{
+  customerCount: 19,
+  name: 'Leisurely Lager',
+  type: 'Lager'
+}
+{
+  customerCount: 16,
+  name: 'El Jefe',
+  type: 'Hefeweizen'
+}
