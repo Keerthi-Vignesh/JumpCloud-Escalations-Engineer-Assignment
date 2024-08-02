@@ -173,7 +173,7 @@
    docker exec 62b036326c88 mongosh mongodb://localhost:27017/brewery query.js --quiet > email_list.json
    ```
    this is the query to export the file.
-4. The **query.js** file contains the list of all e-mail address.
+4. The **email_list.json** file contains the list of all e-mail address.
 
 5. Created a JS file for IPA beer lovers 
    ```sh
