@@ -1,0 +1,824 @@
+Agent cannot manage PAM files. Full disk access is needed.
+Agent cannot manage PAM files. Full disk access is needed.
+Agent can manage PAM files
+time=2024-08-01 20:48:49.278944+05:30 PID=40477 level=info msg=Could not load registration attemp
+ts counter. Assuming this is the first attempt and not applying backoff
+time=2024-08-01 20:48:49.280029+05:30 PID=40477 level=info msg=Certificate read failed error=Coul
+d not read the client certificate PEM file '/opt/jc/client.crt', err='Could not read PEM file, er
+r='open /opt/jc/client.crt: no such file or directory''
+time=2024-08-01 20:48:49.280127+05:30 PID=40477 level=info msg=REGISTRATION: No existing valid ce
+rtificate found, initializing it
+time=2024-08-01 20:48:49.280200+05:30 PID=40477 level=info msg=REGISTRATION: Creating client cert
+ificates
+time=2024-08-01 20:48:51.785295+05:30 PID=40477 level=info msg=REGISTRATION: Client certificates 
+created and signed successfully
+time=2024-08-01 20:48:52.565272+05:30 PID=40477 level=info msg=REGISTRATION: Registering new syst
+em
+time=2024-08-01 20:48:52.565553+05:30 PID=40477 level=info msg=systemreport.reporter: running sys
+tem report
+time=2024-08-01 20:48:52.565728+05:30 PID=40477 level=error msg=systemreport.reporter: error coll
+ecting data error=Get "": unsupported protocol scheme ""
+time=2024-08-01 20:48:53.182893+05:30 PID=40477 level=info msg=Necessary structs are nil. Will no
+t attempt to get ServiceAccount data
+time=2024-08-01 20:48:54.242254+05:30 PID=40477 level=info msg=REGISTRATION: System registration 
+completed successfully
+time=2024-08-01 20:48:54.242350+05:30 PID=40477 level=info msg=REGISTRATION: Successfully created
+ certificate and completed registration.
+time=2024-08-01 20:48:54.242990+05:30 PID=40477 level=info msg=enabling memory profiling on SIGUS
+R1
+time=2024-08-01 20:48:54.243284+05:30 PID=40477 level=info msg=---------------------
+time=2024-08-01 20:48:54.243328+05:30 PID=40477 level=info msg=Starting agent daemon
+time=2024-08-01 20:48:54.243377+05:30 PID=40477 level=info msg=---------------------
+time=2024-08-01 20:48:54.243396+05:30 PID=40477 level=info msg=Build version: 1.209.1
+time=2024-08-01 20:48:54.243414+05:30 PID=40477 level=info msg=Build date: Fri Jul 26 21:12:24 UT
+C 2024
+time=2024-08-01 20:48:54.282022+05:30 PID=40477 level=info msg=Loading config from /opt/jc/jcagen
+t.conf path=/opt/jc/jcagent.conf
+time=2024-08-01 20:48:54.323205+05:30 PID=40477 level=info msg=system OS info systemInfo=Mac OS X
+ 14.5
+time=2024-08-01 20:48:54.327788+05:30 PID=40477 level=info msg=Unable to get osquery version erro
+r=failed to get osquery version: bash: /opt/jc/bin/jcosqueryi: No such file or directory
+
+time=2024-08-01 20:48:54.327974+05:30 PID=40477 level=info msg=attempting to install jcosqueryi..
+.
+time=2024-08-01 20:48:55.474411+05:30 PID=40477 level=info msg=successfully installed jcosqueryi
+time=2024-08-01 20:48:55.476252+05:30 PID=40477 level=info msg=Creating HTTP client.
+time=2024-08-01 20:48:55.476339+05:30 PID=40477 level=info msg=using new path construction method
+
+time=2024-08-01 20:48:55.476355+05:30 PID=40477 level=info msg=Using migrations path of file:///o
+pt/jc//migrations
+time=2024-08-01 20:48:55.476510+05:30 PID=40477 level=info msg=HTTP client successfully initializ
+ed its TLS config.
+time=2024-08-01 20:48:55.478012+05:30 PID=40477 level=info msg=Database has no existing version. 
+Migrating to version 19
+time=2024-08-01 20:48:55.478027+05:30 PID=40477 level=info msg=Migrating database from version 0 
+to 19
+time=2024-08-01 20:48:55.493966+05:30 PID=40477 level=info msg=No zero touch username found error
+=exit status 1
+time=2024-08-01 20:48:55.494027+05:30 PID=40477 level=info msg=MD5SumMonitor Init
+time=2024-08-01 20:48:55.494039+05:30 PID=40477 level=info msg=MD5SumMonitor Init complete
+time=2024-08-01 20:48:55.494125+05:30 PID=40477 level=error msg=failed to prepare statement for r
+eporter_record select error=row value misused
+time=2024-08-01 20:48:55.494158+05:30 PID=40477 level=error msg=failed to prepare statement for r
+eporter_record select error=row value misused
+time=2024-08-01 20:48:55.494479+05:30 PID=40477 level=info msg=Agent Init systemID=66aba75ebae7dc
+6aa262e094
+time=2024-08-01 20:48:55.497098+05:30 PID=40477 level=info msg=Auditd service not found, enabling
+ it function=EnableAuditLogs
+time=2024-08-01 20:48:55.503175+05:30 PID=40477 level=info msg=Successfully enabled auditd functi
+on=EnableAuditLogs
+time=2024-08-01 20:48:55.503221+05:30 PID=40477 level=info msg=Activating jc login window on agen
+t startup
+time=2024-08-01 20:48:55.537236+05:30 PID=40477 level=info msg=JC login window was activated succ
+essfully
+time=2024-08-01 20:48:55.625604+05:30 PID=40477 level=info msg=Agent Init complete
+time=2024-08-01 20:48:55.625843+05:30 PID=40477 level=info msg=Agent Start
+time=2024-08-01 20:48:55.628314+05:30 PID=40477 level=info msg=JCClient Start
+time=2024-08-01 20:48:55.628343+05:30 PID=40477 level=info msg=CertificateChecker Start
+time=2024-08-01 20:48:55.628351+05:30 PID=40477 level=info msg=CertificateChecker Start complete
+time=2024-08-01 20:48:55.628669+05:30 PID=40477 level=info msg=JCClient Start complete
+time=2024-08-01 20:48:55.628678+05:30 PID=40477 level=info msg=DevicesClient Start
+time=2024-08-01 20:48:55.629100+05:30 PID=40477 level=info msg=DevicesClient Start complete
+time=2024-08-01 20:48:55.629143+05:30 PID=40477 level=info msg=Starting metrics db queue
+time=2024-08-01 20:48:55.629154+05:30 PID=40477 level=info msg=UserManagement Start
+time=2024-08-01 20:48:55.707643+05:30 PID=40477 level=info msg=UserManagement Start complete
+time=2024-08-01 20:48:55.707721+05:30 PID=40477 level=info msg=Dispatcher Start
+time=2024-08-01 20:48:55.707736+05:30 PID=40477 level=info msg=Dispatcher Start complete
+time=2024-08-01 20:48:55.707746+05:30 PID=40477 level=info msg=LocalListener Start
+time=2024-08-01 20:48:55.707766+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 20:48:55.707863+05:30 PID=40477 level=info msg=softwareapps.manager.loadPersisted
+SoftwareAppConf() - loaded SoftwareAppConf: {Checksum: Configs[]:}
+time=2024-08-01 20:48:55.707868+05:30 PID=40477 level=info msg=LocalListener Start Complete
+time=2024-08-01 20:48:55.707901+05:30 PID=40477 level=info msg=LocalGrpcServer Start
+time=2024-08-01 20:48:56.357185+05:30 PID=40477 level=info msg=LocalGrpcServer Start Complete
+time=2024-08-01 20:48:56.357218+05:30 PID=40477 level=info msg=[profiles watcher] starting logstr
+eam
+time=2024-08-01 20:48:56.358675+05:30 PID=40477 level=info msg=Starting mdmReport reporter
+time=2024-08-01 20:48:56.358741+05:30 PID=40477 level=info msg=starting policy manager
+time=2024-08-01 20:48:56.358770+05:30 PID=40477 level=info msg=softwareapps.manager.Start() - sta
+rt
+time=2024-08-01 20:48:56.358775+05:30 PID=40477 level=info msg=softwareapps.manager.SendConfigs()
+ - start
+time=2024-08-01 20:48:56.358772+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-01 20:48:56.358784+05:30 PID=40477 level=info msg=softwareapps.manager.SendConfigs()
+ - end
+time=2024-08-01 20:48:56.358848+05:30 PID=40477 level=info msg=policies manager received a reques
+t to update its policy conf
+time=2024-08-01 20:48:56.358871+05:30 PID=40477 level=info msg=softwareapps.manager.Start() - end
+
+time=2024-08-01 20:48:56.358963+05:30 PID=40477 level=info msg=requesting policy conf from agent 
+server
+time=2024-08-01 20:48:56.358975+05:30 PID=40477 level=info msg=starting FDE manager function=FDEM
+anager.Start
+time=2024-08-01 20:48:56.360168+05:30 PID=40477 level=info msg=No Service Account keychain exists
+, will attempt to retrieve password from the passwordfile
+time=2024-08-01 20:48:56.378776+05:30 PID=40477 level=info msg=rotate - Rotating service account 
+password
+time=2024-08-01 20:48:56.408536+05:30 PID=40477 level=info msg=[mdmReport:associationToken] could
+ not find mdmReport settings profile 
+time=2024-08-01 20:48:56.589889+05:30 PID=40477 level=info msg=Processing user updates
+time=2024-08-01 20:48:56.640531+05:30 PID=40477 level=info msg=MQTT client expires at: 2024-08-31
+T15:18:56.000Z. Setting up timer to reconnect in: 647h59m59.4235275s
+time=2024-08-01 20:48:56.640581+05:30 PID=40477 level=info msg=Connecting MQTT client URL=tls://a
+1hrq03pdcca60-ats.iot.us-east-1.amazonaws.com:443 clientID=system-66aba75ebae7dc6aa262e094
+time=2024-08-01 20:48:56.703387+05:30 PID=40477 level=info msg=Processing adding new users users=
+map[]
+time=2024-08-01 20:48:56.703417+05:30 PID=40477 level=info msg=Processing user takeovers takeover
+Users=map[]
+time=2024-08-01 20:48:56.703426+05:30 PID=40477 level=info msg=Processing already managed already
+ManagedUsers=map[]
+time=2024-08-01 20:48:56.703432+05:30 PID=40477 level=info msg=Processing expired password users 
+expiredPasswordUsers=map[]
+time=2024-08-01 20:48:56.703439+05:30 PID=40477 level=info msg=Processing disabling users disable
+dUsers=map[]
+time=2024-08-01 20:48:56.703444+05:30 PID=40477 level=info msg=Processing lockout users lockoutUs
+ers=map[]
+time=2024-08-01 20:48:56.714520+05:30 PID=40477 level=info msg=Posting notification to server. no
+tifications count: 0
+time=2024-08-01 20:48:56.842967+05:30 PID=40477 level=info msg=Starting systemreport service
+time=2024-08-01 20:48:56.842995+05:30 PID=40477 level=warning msg=unable to load the time of the 
+last report
+time=2024-08-01 20:48:56.843006+05:30 PID=40477 level=info msg=systemreport.reporter: running sys
+tem report
+time=2024-08-01 20:48:56.843043+05:30 PID=40477 level=warning msg=failed to read cache from disk 
+on startup error=open /opt/jc/systemInsightsCache.json: no such file or directory
+time=2024-08-01 20:48:56.843054+05:30 PID=40477 level=warning msg=unable to load the time of the 
+last report
+time=2024-08-01 20:48:56.843071+05:30 PID=40477 level=info msg=systemreport.reporter: running sys
+tem report
+time=2024-08-01 20:48:56.843055+05:30 PID=40477 level=info msg=Agent Start complete
+time=2024-08-01 20:48:56.843087+05:30 PID=40477 level=info msg=AgentVersion=1.209.1
+time=2024-08-01 20:48:56.843065+05:30 PID=40477 level=warning msg=failed to read conf from disk o
+n startup error=open /opt/jc/systemInsightsConf.json: no such file or directory
+time=2024-08-01 20:48:56.843241+05:30 PID=40477 level=info msg=bypassing system insights boot del
+ay
+
+
+Authentication for node /Local/Default failed. (-14090, eDSAuthFailed)
+<dscl_cmd> DS Error: -14090 (eDSAuthFailed)
+time=2024-08-01 20:48:57.284998+05:30 PID=40477 level=info msg=policies manager received a reques
+t to force update policies
+time=2024-08-01 20:48:57.285093+05:30 PID=40477 level=info msg=Incoming Policy Conf:
+          Bundle: &{Checksum:c08c82c1895818128dc386d0a4ad1d02 URL:https://cdn02.jumpcloud.com/pol
+icies/v2.180.0/jumpcloud-policies-darwin-v2.180.0.tgz}
+        Checksum: 8e54896bcd0f6c518cd627f98a1606927400681485aeb1d8890cd1e8a909d4aa
+        Policies:
+
+time=2024-08-01 20:48:57.285105+05:30 PID=40477 level=info msg=updating policies with: force=true
+, valid=false
+time=2024-08-01 20:48:57.305366+05:30 PID=40477 level=error msg=error when closing file error=clo
+se /opt/jc/policies/jumpcloud-policies.tgz: file already closed path=/opt/jc/policies/jumpcloud-p
+olicies.tgz
+time=2024-08-01 20:48:57.305387+05:30 PID=40477 level=info msg=downloaded policies bundle: https:
+//cdn02.jumpcloud.com/policies/v2.180.0/jumpcloud-policies-darwin-v2.180.0.tgz
+time=2024-08-01 20:48:57.306191+05:30 PID=40477 level=info msg=updated in memory policy conf with
+ incoming conf
+time=2024-08-01 20:48:57.306281+05:30 PID=40477 level=info msg=wrote incoming conf to disk
+time=2024-08-01 20:48:57.306878+05:30 PID=40477 level=info msg=policies manager now applying poli
+cies
+time=2024-08-01 20:48:58.336377+05:30 PID=40477 level=info msg=Processing event PASSWORD_CHANGE w
+ith handler Password Change Listener
+
+time=2024-08-01 20:48:58.559453+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 20:48:58.559470+05:30 PID=40477 level=info msg=Running updater binary command=/op
+t/jc//bin/jumpcloud-agent-updater
+time=2024-08-01 20:48:59.070102+05:30 PID=40477 level=info msg=system insights manager successful
+ly updated its conf
+time=2024-08-01 20:48:59.070333+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-01 20:48:59.841616+05:30 PID=40477 level=info msg=User updates complete
+time=2024-08-01 20:48:59.841903+05:30 PID=40477 level=info msg=Finished processing event PASSWORD
+_CHANGE with handler Password Change Listener
+time=2024-08-01 20:48:59.841960+05:30 PID=40477 level=info msg=Processing event PASSWORD_CHANGE w
+ith handler Event Logger
+time=2024-08-01 20:48:59.842014+05:30 PID=40477 level=info msg=Password change attempt occurred f
+or user _jumpcloudserviceaccount
+time=2024-08-01 20:48:59.842060+05:30 PID=40477 level=info msg=Finished processing event PASSWORD
+_CHANGE with handler Event Logger
+time=2024-08-01 20:48:59.842098+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler User Update Handler
+time=2024-08-01 20:48:59.842134+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler User Update Handler
+time=2024-08-01 20:48:59.842155+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Lockout Handler
+time=2024-08-01 20:48:59.843126+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Lockout Handler
+time=2024-08-01 20:48:59.843614+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Event Logger
+time=2024-08-01 20:48:59.843767+05:30 PID=40477 level=info msg=AuthConf Changed
+time=2024-08-01 20:48:59.843828+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Event Logger
+
+time=2024-08-01 20:49:01.029150+05:30 PID=40477 level=info msg=systemreport: sending system repor
+t
+time=2024-08-01 20:49:01.029208+05:30 PID=40477 level=info msg=systemreport: posting report to se
+rver
+time=2024-08-01 20:49:01.332874+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 20:49:01.332917+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 20:49:01.614049+05:30 PID=40477 level=info msg=Running updater binary command=/op
+t/jc//bin/jumpcloud-agent-updater
+time=2024-08-01 20:49:02.844453+05:30 PID=40477 level=error msg=Upgrade command failed error=exit
+ status 1
+time=2024-08-01 20:49:06.333995+05:30 PID=40477 level=warning msg=dispatcher.poller(): Received p
+oll interval in a short period of time (less than 10 s since last poll)
+time=2024-08-01 20:49:06.601526+05:30 PID=40477 level=info msg=Loaded configuration for agent sys
+temID=66aba75ebae7dc6aa262e094
+time=2024-08-01 20:49:06.601621+05:30 PID=40477 level=info msg=UserManagement Start
+time=2024-08-01 20:49:06.601636+05:30 PID=40477 level=error msg=evaluateUM failed error=um.Start(
+) called after user manager was already started
+time=2024-08-01 20:49:06.601672+05:30 PID=40477 level=info msg=streaming logger sender set
+time=2024-08-01 20:49:06.601684+05:30 PID=40477 level=info msg=enabling streaming logger
+time=2024-08-01 20:49:06.601685+05:30 PID=40477 level=info msg=streaming logger send interval set
+ to 15m0s seconds
+time=2024-08-01 20:49:06.601684+05:30 PID=40477 level=info msg=streaming logger batch size set to
+ 1048576 bytes
+time=2024-08-01 20:49:11.334175+05:30 PID=40477 level=warning msg=dispatcher.poller(): Received p
+oll interval in a short period of time (less than 10 s since last poll)
+time=2024-08-01 20:49:12.254040+05:30 PID=40477 level=info msg=policies manager received a ClearW
+orkflows request to update workflow policies
+time=2024-08-01 20:49:12.944738+05:30 PID=40477 level=info msg=register client successful functio
+n=DirectivesServer.Register path=jumpcloud.remote_assist_agent
+time=2024-08-01 20:49:16.334937+05:30 PID=40477 level=warning msg=dispatcher.poller(): Received p
+oll interval in a short period of time (less than 10 s since last poll)
+time=2024-08-01 20:49:52.412866+05:30 PID=40477 level=info msg=Done executing binary
+time=2024-08-01 20:54:03.826629+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 20:54:03.826863+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 20:58:26.667948+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 20:58:26.668775+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:00:08.250466+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:00:08.251246+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:00:09.677789+05:30 PID=40477 level=info msg=Processing user updates
+time=2024-08-01 21:00:09.833989+05:30 PID=40477 level=info msg=Processing adding new users users=
+map[]
+time=2024-08-01 21:00:09.834035+05:30 PID=40477 level=info msg=Processing user takeovers takeover
+Users=map[]
+time=2024-08-01 21:00:09.834049+05:30 PID=40477 level=info msg=Processing already managed already
+ManagedUsers=map[]
+time=2024-08-01 21:00:09.834055+05:30 PID=40477 level=info msg=Processing expired password users 
+expiredPasswordUsers=map[]
+time=2024-08-01 21:00:09.834063+05:30 PID=40477 level=info msg=Processing disabling users disable
+dUsers=map[]
+time=2024-08-01 21:00:09.834069+05:30 PID=40477 level=info msg=Processing lockout users lockoutUs
+ers=map[]
+time=2024-08-01 21:00:09.851672+05:30 PID=40477 level=info msg=User updates complete
+time=2024-08-01 21:00:09.851726+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler User Update Handler
+time=2024-08-01 21:00:09.851770+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler User Update Handler
+time=2024-08-01 21:00:09.851778+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Lockout Handler
+time=2024-08-01 21:00:09.851998+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Lockout Handler
+time=2024-08-01 21:00:09.852005+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Event Logger
+time=2024-08-01 21:00:09.852015+05:30 PID=40477 level=info msg=AuthConf Changed
+time=2024-08-01 21:00:09.852024+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Event Logger
+time=2024-08-01 21:00:13.252469+05:30 PID=40477 level=warning msg=dispatcher.poller(): Received p
+oll interval in a short period of time (less than 10 s since last poll)
+time=2024-08-01 21:00:18.252325+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:00:18.253179+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:00:42.293694+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:00:42.293950+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:00:46.893457+05:30 PID=40477 level=info msg=Processing user updates
+time=2024-08-01 21:00:47.036418+05:30 PID=40477 level=info msg=Processing adding new users users=
+map[]
+time=2024-08-01 21:00:47.036461+05:30 PID=40477 level=info msg=Processing user takeovers takeover
+Users=map[]
+time=2024-08-01 21:00:47.036473+05:30 PID=40477 level=info msg=Processing already managed already
+ManagedUsers=map[]
+time=2024-08-01 21:00:47.036480+05:30 PID=40477 level=info msg=Processing expired password users 
+expiredPasswordUsers=map[]
+time=2024-08-01 21:00:47.036486+05:30 PID=40477 level=info msg=Processing disabling users disable
+dUsers=map[]
+time=2024-08-01 21:00:47.036494+05:30 PID=40477 level=info msg=Processing lockout users lockoutUs
+ers=map[]
+time=2024-08-01 21:00:47.046933+05:30 PID=40477 level=info msg=User updates complete
+time=2024-08-01 21:00:47.046982+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler User Update Handler
+time=2024-08-01 21:00:47.047020+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler User Update Handler
+time=2024-08-01 21:00:47.047036+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Lockout Handler
+time=2024-08-01 21:00:47.047263+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Lockout Handler
+time=2024-08-01 21:00:47.047271+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Event Logger
+time=2024-08-01 21:00:47.047282+05:30 PID=40477 level=info msg=AuthConf Changed
+time=2024-08-01 21:00:47.047298+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Event Logger
+time=2024-08-01 21:00:47.295250+05:30 PID=40477 level=warning msg=dispatcher.poller(): Received p
+oll interval in a short period of time (less than 10 s since last poll)
+time=2024-08-01 21:00:52.295064+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:00:52.295237+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:04:06.602076+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 21:08:19.796508+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:08:19.797705+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:08:29.798803+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:08:29.799072+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:09:04.522761+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:09:04.523012+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:09:14.524166+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:09:14.525499+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:10:05.479952+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:10:05.480364+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:18:57.423808+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-01 21:19:06.601016+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 21:21:51.413776+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:21:51.414065+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:21:52.741993+05:30 PID=40477 level=info msg=Processing user updates
+time=2024-08-01 21:21:52.890794+05:30 PID=40477 level=info msg=Processing adding new users users=
+map[]
+time=2024-08-01 21:21:52.890837+05:30 PID=40477 level=info msg=Processing user takeovers takeover
+Users=map[]
+time=2024-08-01 21:21:52.890850+05:30 PID=40477 level=info msg=Processing already managed already
+ManagedUsers=map[]
+time=2024-08-01 21:21:52.890858+05:30 PID=40477 level=info msg=Processing expired password users 
+expiredPasswordUsers=map[]
+time=2024-08-01 21:21:52.890868+05:30 PID=40477 level=info msg=Processing disabling users disable
+dUsers=map[]
+time=2024-08-01 21:21:52.890875+05:30 PID=40477 level=info msg=Processing lockout users lockoutUs
+ers=map[]
+time=2024-08-01 21:21:52.904634+05:30 PID=40477 level=info msg=User updates complete
+time=2024-08-01 21:21:52.904698+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler User Update Handler
+time=2024-08-01 21:21:52.904766+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler User Update Handler
+time=2024-08-01 21:21:52.904773+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Lockout Handler
+time=2024-08-01 21:21:52.905004+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Lockout Handler
+time=2024-08-01 21:21:52.905012+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Event Logger
+time=2024-08-01 21:21:52.905022+05:30 PID=40477 level=info msg=AuthConf Changed
+time=2024-08-01 21:21:52.905032+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Event Logger
+time=2024-08-01 21:21:56.415268+05:30 PID=40477 level=warning msg=dispatcher.poller(): Received p
+oll interval in a short period of time (less than 10 s since last poll)
+time=2024-08-01 21:24:19.085588+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:24:19.087205+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:24:20.365791+05:30 PID=40477 level=info msg=Processing user updates
+time=2024-08-01 21:24:20.518614+05:30 PID=40477 level=info msg=Processing adding new users users=
+map[keerthi_vignesh:0x140002fe9a0]
+time=2024-08-01 21:24:20.525028+05:30 PID=40477 level=warning msg=Failed to get existing ShadowHa
+shData, will overwrite error=Could not find attribute dsAttrTypeNative:ShadowHashData in OD Recor
+d: 
+time=2024-08-01 21:24:20.532955+05:30 PID=40477 level=info msg=Modified permissions for directory
+ path=/Users/Keerthi_Vignesh/Music
+time=2024-08-01 21:24:20.532988+05:30 PID=40477 level=info msg=Modified permissions for directory
+ path=/Users/Keerthi_Vignesh/Pictures
+time=2024-08-01 21:24:20.533012+05:30 PID=40477 level=info msg=Modified permissions for directory
+ path=/Users/Keerthi_Vignesh/Desktop
+time=2024-08-01 21:24:20.533033+05:30 PID=40477 level=info msg=Modified permissions for directory
+ path=/Users/Keerthi_Vignesh/Library
+time=2024-08-01 21:24:20.533056+05:30 PID=40477 level=info msg=Modified permissions for directory
+ path=/Users/Keerthi_Vignesh/Public
+time=2024-08-01 21:24:20.533071+05:30 PID=40477 level=info msg=Modified permissions for directory
+ path=/Users/Keerthi_Vignesh/Movies
+time=2024-08-01 21:24:20.533091+05:30 PID=40477 level=info msg=Modified permissions for directory
+ path=/Users/Keerthi_Vignesh/Documents
+time=2024-08-01 21:24:20.533115+05:30 PID=40477 level=info msg=Modified permissions for directory
+ path=/Users/Keerthi_Vignesh/Downloads
+time=2024-08-01 21:24:20.534062+05:30 PID=40477 level=warning msg=Failed to get attribute for use
+r attribute=dsAttrTypeNative:_writers_AvatarRepresentation error=Could not find attribute dsAttrT
+ypeNative:_writers_AvatarRepresentation in OD Record:  username=Keerthi_Vignesh
+time=2024-08-01 21:24:20.535093+05:30 PID=40477 level=warning msg=Failed to get attribute for use
+r attribute=dsAttrTypeNative:_writers_hint error=Could not find attribute dsAttrTypeNative:_write
+rs_hint in OD Record:  username=Keerthi_Vignesh
+time=2024-08-01 21:24:20.535991+05:30 PID=40477 level=warning msg=Failed to get attribute for use
+r attribute=dsAttrTypeNative:_writers_inputSources error=Could not find attribute dsAttrTypeNativ
+e:_writers_inputSources in OD Record:  username=Keerthi_Vignesh
+time=2024-08-01 21:24:20.536772+05:30 PID=40477 level=warning msg=Failed to get attribute for use
+r attribute=dsAttrTypeNative:_writers_jpegphoto error=Could not find attribute dsAttrTypeNative:_
+writers_jpegphoto in OD Record:  username=Keerthi_Vignesh
+time=2024-08-01 21:24:20.537596+05:30 PID=40477 level=warning msg=Failed to get attribute for use
+r attribute=dsAttrTypeNative:_writers_picture error=Could not find attribute dsAttrTypeNative:_wr
+iters_picture in OD Record:  username=Keerthi_Vignesh
+time=2024-08-01 21:24:20.538427+05:30 PID=40477 level=warning msg=Failed to get attribute for use
+r attribute=dsAttrTypeNative:_writers_unlockOptions error=Could not find attribute dsAttrTypeNati
+ve:_writers_unlockOptions in OD Record:  username=Keerthi_Vignesh
+time=2024-08-01 21:24:20.539299+05:30 PID=40477 level=warning msg=Failed to get attribute for use
+r attribute=dsAttrTypeNative:_writers_UserCertificate error=Could not find attribute dsAttrTypeNa
+tive:_writers_UserCertificate in OD Record:  username=Keerthi_Vignesh
+time=2024-08-01 21:24:20.540739+05:30 PID=40477 level=info msg=Processing user takeovers takeover
+Users=map[]
+time=2024-08-01 21:24:20.540754+05:30 PID=40477 level=info msg=Processing already managed already
+ManagedUsers=map[]
+time=2024-08-01 21:24:20.540759+05:30 PID=40477 level=info msg=Processing expired password users 
+expiredPasswordUsers=map[]
+time=2024-08-01 21:24:20.540765+05:30 PID=40477 level=info msg=Processing disabling users disable
+dUsers=map[]
+time=2024-08-01 21:24:20.540772+05:30 PID=40477 level=info msg=Processing lockout users lockoutUs
+ers=map[]
+time=2024-08-01 21:24:20.575375+05:30 PID=40477 level=info msg=User updates complete
+time=2024-08-01 21:24:20.575427+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler User Update Handler
+time=2024-08-01 21:24:20.575479+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler User Update Handler
+time=2024-08-01 21:24:20.575486+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Lockout Handler
+time=2024-08-01 21:24:20.575711+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Lockout Handler
+time=2024-08-01 21:24:20.575719+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Event Logger
+time=2024-08-01 21:24:20.575728+05:30 PID=40477 level=info msg=AuthConf Changed
+time=2024-08-01 21:24:20.575739+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Event Logger
+time=2024-08-01 21:24:24.088473+05:30 PID=40477 level=warning msg=dispatcher.poller(): Received p
+oll interval in a short period of time (less than 10 s since last poll)
+time=2024-08-01 21:24:29.088381+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:24:29.089026+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:34:06.600380+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 21:36:32.959326+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:36:32.959824+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:39:39.828068+05:30 PID=40477 level=info msg=MQTT push client received message 
+on topic. Queueing poll mqttTopics=systems/66aba75ebae7dc6aa262e094/state
+time=2024-08-01 21:39:39.828433+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-01 21:39:41.085975+05:30 PID=40477 level=info msg=Processing user updates
+time=2024-08-01 21:39:41.237827+05:30 PID=40477 level=info msg=Processing adding new users users=
+map[]
+time=2024-08-01 21:39:41.237866+05:30 PID=40477 level=info msg=Processing user takeovers takeover
+Users=map[]
+time=2024-08-01 21:39:41.237877+05:30 PID=40477 level=info msg=Processing already managed already
+ManagedUsers=map[keerthi_vignesh:0x140083bec60]
+time=2024-08-01 21:39:41.243909+05:30 PID=40477 level=info msg=Processing expired password users 
+expiredPasswordUsers=map[]
+time=2024-08-01 21:39:41.243924+05:30 PID=40477 level=info msg=Processing disabling users disable
+dUsers=map[]
+time=2024-08-01 21:39:41.243932+05:30 PID=40477 level=info msg=Processing lockout users lockoutUs
+ers=map[]
+time=2024-08-01 21:39:41.264762+05:30 PID=40477 level=info msg=User updates complete
+time=2024-08-01 21:39:41.264850+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler User Update Handler
+time=2024-08-01 21:39:41.264898+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler User Update Handler
+time=2024-08-01 21:39:41.264914+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Lockout Handler
+time=2024-08-01 21:39:41.265111+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Lockout Handler
+time=2024-08-01 21:39:41.265118+05:30 PID=40477 level=info msg=Processing event AUTH_CONF_CHANGED
+ with handler Event Logger
+time=2024-08-01 21:39:41.265131+05:30 PID=40477 level=info msg=AuthConf Changed
+time=2024-08-01 21:39:41.265142+05:30 PID=40477 level=info msg=Finished processing event AUTH_CON
+F_CHANGED with handler Event Logger
+time=2024-08-01 21:39:44.828869+05:30 PID=40477 level=warning msg=dispatcher.poller(): Received p
+oll interval in a short period of time (less than 10 s since last poll)
+time=2024-08-01 21:48:58.518996+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-01 21:49:06.600023+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 21:49:45.825673+05:30 PID=40477 level=warning msg=Fallback Poll was required to h
+andle the following directive: update_system_insights_conf
+time=2024-08-01 21:49:46.887079+05:30 PID=40477 level=info msg=system insights manager successful
+ly updated its conf
+time=2024-08-01 21:49:46.887228+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-01 21:49:49.831834+05:30 PID=40477 level=warning msg=dispatcher.poller(): Received p
+oll interval in a short period of time (less than 10 s since last poll)
+time=2024-08-01 22:04:06.599402+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 22:18:59.899663+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-01 22:19:06.598497+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 22:34:06.597962+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 22:49:01.026303+05:30 PID=40477 level=info msg=systemreport.reporter: running sys
+tem report
+
+time=2024-08-01 22:49:04.046776+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-01 22:49:04.166151+05:30 PID=40477 level=info msg=systemreport: sending system repor
+t
+time=2024-08-01 22:49:04.166254+05:30 PID=40477 level=info msg=systemreport: posting report to se
+rver
+time=2024-08-01 22:49:06.598747+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 22:50:17.139431+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-01 23:04:06.594859+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 23:19:05.144343+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-01 23:19:06.592806+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 23:34:06.594098+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 23:49:06.275761+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-01 23:49:06.592975+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-01 23:50:49.654156+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-01 23:53:43.810988+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 00:00:25.097621+05:30 PID=40477 level=info msg=got EOF, shutting down local liste
+ner
+time=2024-08-02 00:00:25.101440+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Audit Manager
+time=2024-08-02 00:00:25.124923+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Audit Manager
+time=2024-08-02 00:00:25.189866+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r LoginMetrics
+time=2024-08-02 00:00:25.280675+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler LoginMetrics
+time=2024-08-02 00:00:25.280811+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Login Tracker
+time=2024-08-02 00:00:25.281030+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Login Tracker
+time=2024-08-02 00:00:25.281341+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Policies Event Handler
+time=2024-08-02 00:00:25.281718+05:30 PID=40477 level=info msg=enqueued request to run all polici
+es with a LOGIN monitor
+time=2024-08-02 00:00:25.283428+05:30 PID=40477 level=info msg=policies manager received a reques
+t to run policies that have a LOGIN monitor type
+time=2024-08-02 00:00:25.285242+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Policies Event Handler
+time=2024-08-02 00:00:25.285345+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Lockout Handler
+time=2024-08-02 00:00:25.285404+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Lockout Handler
+time=2024-08-02 00:00:25.285420+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Event Logger
+time=2024-08-02 00:00:25.285540+05:30 PID=40477 level=info msg=User keerthivignesh logged in from
+ an unknown IP address, process name: 
+time=2024-08-02 00:00:25.285731+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Event Logger
+time=2024-08-02 00:00:32.251575+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 00:10:43.808222+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 00:25:43.807835+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 00:25:47.759169+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 00:40:43.808702+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 00:55:41.377499+05:30 PID=40477 level=info msg=systemreport.reporter: running sys
+tem report
+
+time=2024-08-02 00:55:43.808374+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 00:55:43.958311+05:30 PID=40477 level=info msg=systemreport: sending system repor
+t
+time=2024-08-02 00:55:43.958419+05:30 PID=40477 level=info msg=systemreport: posting report to se
+rver
+time=2024-08-02 00:55:48.951643+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 00:57:59.478482+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-02 01:10:43.806544+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 01:25:43.806785+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 01:25:49.476677+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 01:40:43.807057+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 01:55:43.806657+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 01:55:50.555807+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 01:58:29.330151+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-02 02:10:43.805819+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 02:25:43.804712+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 02:25:51.758782+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 02:40:43.805508+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 02:55:43.805623+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 02:55:43.956827+05:30 PID=40477 level=info msg=systemreport.reporter: running sys
+tem report
+
+time=2024-08-02 02:55:46.349712+05:30 PID=40477 level=info msg=systemreport: sending system repor
+t
+time=2024-08-02 02:55:46.349806+05:30 PID=40477 level=info msg=systemreport: posting report to se
+rver
+time=2024-08-02 02:55:52.897537+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 02:58:59.472915+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-02 03:10:43.806390+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 03:28:15.336018+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 03:44:16.427616+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 04:00:54.960803+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 04:17:19.896013+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 04:33:37.030876+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 04:51:35.243616+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 05:10:03.548732+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 05:28:45.216649+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 05:28:54.730314+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 05:29:20.128754+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 05:43:45.216921+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 06:12:40.720085+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 06:31:19.715163+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 06:31:30.667665+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 07:04:40.026527+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 07:05:15.128609+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-02 07:49:07.693090+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 08:14:03.584249+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 08:51:43.164567+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 09:49:18.935734+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 09:49:31.066501+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 10:19:06.018204+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 10:40:01.645162+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 11:54:34.471674+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 11:54:37.016613+05:30 PID=40477 level=info msg=systemreport.reporter: running sys
+tem report
+
+time=2024-08-02 11:54:39.925176+05:30 PID=40477 level=info msg=systemreport: sending system repor
+t
+time=2024-08-02 11:54:39.925543+05:30 PID=40477 level=info msg=systemreport: posting report to se
+rver
+time=2024-08-02 11:54:47.661119+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 12:18:03.380720+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-02 12:36:03.123311+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 13:35:53.971857+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 15:22:41.270301+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 15:22:54.843526+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 15:31:59.996592+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Audit Manager
+time=2024-08-02 15:31:59.996606+05:30 PID=40477 level=info msg=got EOF, shutting down local liste
+ner
+time=2024-08-02 15:31:59.996784+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Audit Manager
+time=2024-08-02 15:31:59.996899+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r LoginMetrics
+time=2024-08-02 15:31:59.998156+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler LoginMetrics
+time=2024-08-02 15:31:59.998196+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Login Tracker
+time=2024-08-02 15:31:59.998271+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Login Tracker
+time=2024-08-02 15:31:59.998283+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Policies Event Handler
+time=2024-08-02 15:31:59.998324+05:30 PID=40477 level=info msg=enqueued request to run all polici
+es with a LOGIN monitor
+time=2024-08-02 15:31:59.998407+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Policies Event Handler
+time=2024-08-02 15:31:59.998422+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Lockout Handler
+time=2024-08-02 15:31:59.998577+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Lockout Handler
+time=2024-08-02 15:31:59.998620+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Event Logger
+time=2024-08-02 15:31:59.998759+05:30 PID=40477 level=info msg=User keerthivignesh logged in from
+ an unknown IP address, process name: 
+time=2024-08-02 15:32:00.009702+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Event Logger
+time=2024-08-02 15:32:00.020425+05:30 PID=40477 level=info msg=policies manager received a reques
+t to run policies that have a LOGIN monitor type
+time=2024-08-02 15:32:55.002876+05:30 PID=40477 level=error msg=post or put request has an unexpe
+cted empty body URL=/eventbatch
+time=2024-08-02 15:33:05.004515+05:30 PID=40477 level=error msg=post or put request has an unexpe
+cted empty body URL=/eventbatch
+time=2024-08-02 15:33:15.005057+05:30 PID=40477 level=error msg=post or put request has an unexpe
+cted empty body URL=/eventbatch
+time=2024-08-02 15:33:25.007322+05:30 PID=40477 level=error msg=post or put request has an unexpe
+cted empty body URL=/eventbatch
+time=2024-08-02 15:33:35.008718+05:30 PID=40477 level=error msg=post or put request has an unexpe
+cted empty body URL=/eventbatch
+time=2024-08-02 15:33:45.009225+05:30 PID=40477 level=error msg=post or put request has an unexpe
+cted empty body URL=/eventbatch
+time=2024-08-02 15:33:55.010703+05:30 PID=40477 level=error msg=post or put request has an unexpe
+cted empty body URL=/eventbatch
+time=2024-08-02 15:34:05.012040+05:30 PID=40477 level=error msg=post or put request has an unexpe
+cted empty body URL=/eventbatch
+time=2024-08-02 15:34:15.013456+05:30 PID=40477 level=error msg=post or put request has an unexpe
+cted empty body URL=/eventbatch
+time=2024-08-02 15:34:25.014834+05:30 PID=40477 level=error msg=post or put request has an unexpe
+cted empty body URL=/eventbatch
+time=2024-08-02 15:34:25.015058+05:30 PID=40477 level=error msg=failed to send audit events. NumE
+vents=1 error=unexpected empty body request for url: /eventbatch
+time=2024-08-02 15:46:38.191807+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 15:52:36.165596+05:30 PID=40477 level=info msg=dispatcher.poller(): Received imme
+diate Poll request
+time=2024-08-02 16:01:38.189443+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 16:01:52.944563+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 16:06:25.029225+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-02 16:16:38.187404+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 16:31:38.189053+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 16:31:54.358664+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 16:46:38.190771+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 17:01:38.191921+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 17:01:43.647407+05:30 PID=40477 level=info msg=systemreport.reporter: running sys
+tem report
+
+time=2024-08-02 17:01:46.285367+05:30 PID=40477 level=info msg=systemreport: sending system repor
+t
+time=2024-08-02 17:01:46.285505+05:30 PID=40477 level=info msg=systemreport: posting report to se
+rver
+time=2024-08-02 17:01:55.456410+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 17:06:54.760150+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-02 17:16:38.191571+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 17:31:38.192452+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 17:31:55.916682+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 18:41:32.856887+05:30 PID=40477 level=info msg=got EOF, shutting down local liste
+ner
+time=2024-08-02 18:41:32.864392+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Audit Manager
+time=2024-08-02 18:41:32.864565+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Audit Manager
+time=2024-08-02 18:41:32.864609+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r LoginMetrics
+time=2024-08-02 18:41:33.209967+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler LoginMetrics
+time=2024-08-02 18:41:33.210308+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Login Tracker
+time=2024-08-02 18:41:33.210396+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Login Tracker
+time=2024-08-02 18:41:33.210418+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Policies Event Handler
+time=2024-08-02 18:41:33.210479+05:30 PID=40477 level=info msg=enqueued request to run all polici
+es with a LOGIN monitor
+time=2024-08-02 18:41:33.210566+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Policies Event Handler
+time=2024-08-02 18:41:33.210582+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Lockout Handler
+time=2024-08-02 18:41:33.210611+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Lockout Handler
+time=2024-08-02 18:41:33.210623+05:30 PID=40477 level=info msg=Processing event LOGIN with handle
+r Event Logger
+time=2024-08-02 18:41:33.210665+05:30 PID=40477 level=info msg=User keerthivignesh logged in from
+ an unknown IP address, process name: 
+time=2024-08-02 18:41:33.210682+05:30 PID=40477 level=info msg=Finished processing event LOGIN wi
+th handler Event Logger
+time=2024-08-02 18:41:33.210744+05:30 PID=40477 level=info msg=policies manager received a reques
+t to run policies that have a LOGIN monitor type
+time=2024-08-02 18:46:05.474545+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 19:01:05.470389+05:30 PID=40477 level=info msg=client.MessageHandler(): Sending l
+og snapshot
+time=2024-08-02 19:01:24.215909+05:30 PID=40477 level=info msg=[mdmReport] running report
+time=2024-08-02 19:02:04.495291+05:30 PID=40477 level=warning msg=Fallback Poll was required to h
+andle the following directive: ClearWorkflows
+time=2024-08-02 19:02:04.497289+05:30 PID=40477 level=info msg=policies manager received a ClearW
+orkflows request to update workflow policies
+time=2024-08-02 19:02:08.464613+05:30 PID=40477 level=warning msg=dispatcher.poller(): Received p
+oll interval in a short period of time (less than 10 s since last poll)
+time=2024-08-02 19:06:49.780786+05:30 PID=40477 level=info msg=running system insights report
+time=2024-08-02 19:07:12.606241+05:30 PID=40477 level=warning msg=Fallback Poll was required to h
+andle the following directive: RunWorkflow
+time=2024-08-02 19:07:12.609278+05:30 PID=40477 level=info msg=policies manager received a RunWor
+kflow request to update workflow policies
+time=2024-08-02 19:07:12.609462+05:30 PID=40477 level=info msg=Processing TypeScheduleCron
+time=2024-08-02 19:07:12.609552+05:30 PID=40477 level=info msg=Policy manager creating schedule c
+ron monitor ID=66acdfce1bb84ccfda28b711 name=Workflow schedule=immediate type=WORKFLOW
+time=2024-08-02 19:07:12.611406+05:30 PID=40477 level=info msg=policies manager received a reques
+t to apply Workflow policy
