@@ -1,0 +1,98 @@
+# Assignment 2
+## Using the programming language of your choice, complete the following and provide your solution for each: I have used REST API calls via Postman to execute each of the below:
+
+1. In Postman, under variables I set my API key which I got from JumpCloud.
+    ```
+    -Headers:
+    x-api-key: {{api_key}}
+    Content-Type: application/json
+    ```
+---
+2. Create and activate 2 Users.
+
+- POST https://console.jumpcloud.com/api/systemusers
+
+- Body:
+    ```json
+    {
+    "username": "Keerthi_Vignesh",
+    "email": "keerthichoolakkal@gmail.com",
+    "firstname": "Keerthi",
+    "lastname": "Vignesh",
+    "password": "Password123!",
+    "activated": true
+    }
+    ```
+
+- I used similar POST commands to create 4 users in my Jumpcloud console. User activation is also done.
+---
+
+3. Create a Group of Users
+
+- POST https://console.jumpcloud.com/api/v2/usergroups
+
+- Body:
+    ```json
+    {
+        "name": "Keerthi_Test_Group"
+    }
+    ```
+- I created similar 2 user groups.
+
+---
+
+4. Associate Users to the Group of Users
+
+- POST https://console.jumpcloud.com/api/v2/usergroups/66abae6f94ccbc0001533015/members
+
+- Body:
+    ```json
+    {
+      "op": "add",
+      "type": "user",
+      "id": "66abab173222f83277b296ee"
+    }
+    ```
+- I similarly added 2 users to each groups.
+---
+
+5. Associate one User to the recently added system in JumpCloud
+- I added my personal Mac device in the devices list and binded the users to the devices so that they can start using the devices.
+
+- POST https://console.jumpcloud.com/api/v2/systems/66aba75ebae7dc6aa262e094/associations
+
+- Body:
+    ```json
+    {
+    "op": "add",
+    "type": "user",
+    "id": "66abd5062287da32aada43f3"
+    }
+    ```
+- Similarly added the other users as well.
+---
+
+5. Log in to the system as the JumpCloud managed user- Successful.
+---
+
+6. Configure LDAP for your organization in the JumpCloud Admin Portal- Configured via Jumpcloud admin portal.
+---
+
+7. Add two user groups to your LDAP directory, each user group containing at least 2 unique users- Done.
+---
+
+8. Using a seperate BindDN user query your LDAP directory over SSL using 'ldapsearch' and show:
+
+- All users bound to LDAP in your organization
+
+    ```ldapsearch -H ldaps://ldap.jumpcloud.com:636 -x -b "ou=Users,o=66983c44bce0f42c5abcbcc5,dc=jumpcloud,dc=com" -D "uid=Keerthi_Vignesh,ou=Users,o=66983c44bce0f42c5abcbcc5,dc=jumpcloud,dc=com" -W "(objectClass=inetOrgPerson)"```
+
+- Just the users in one specifc user group (your choice of the two groups you created) and only returning the users email, firstname, and lastname.
+    ```ldapsearch -H ldaps://ldap.jumpcloud.com:636 \
+    -D "uid=Keerthi_Vignesh,ou=Users,o=66983c44bce0f42c5abcbcc5,dc=jumpcloud,dc=com" \
+    -w Password123! \
+    -b "ou=Users,o=66983c44bce0f42c5abcbcc5,dc=jumpcloud,dc=com" \
+    -s sub \
+    "(&(objectClass=inetOrgPerson)(memberOf=cn=Test_Group,ou=Users,o=66983c44bce0f42c5abcbcc5,dc=jumpcloud,dc=com))" \
+    mail givenName sn -LLL```
+---
